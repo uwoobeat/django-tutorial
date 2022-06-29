@@ -17,6 +17,6 @@ def read(request, id):
 사용자가 /read/1로 접속하게 되면
 
 1) 최상위 루트의 urls.py에서 include를 통해 myapps의 urls.py로 위임되고
-2) 다시 read/<id>/로 위임되어 views의 read 함수로 위임되어 
+2) read/<id>/로 위임된 것이 다시 views의 read 함수로 위임되어 
 3) HttpResponse에 의한 응답값이 클라이언트에게 전달된다.
 """
